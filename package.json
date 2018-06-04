@@ -1,0 +1,52 @@
+{
+  "name": "typescript-react-redux-router-sample",
+  "version": "1.0.0",
+  "description": "Example of typescript react redux router.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnorantCoder/typescript-react-redux-router-sample.git"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "redux",
+    "router"
+  ],
+  "author": "IgnorantCoder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IgnorantCoder/typescript-react-redux-router-sample/issues"
+  },
+  "homepage": "https://github.com/IgnorantCoder/typescript-react-redux-router-sample#readme",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.0-rc.3",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.16",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-redux": "^6.0.1",
+    "@types/react-router": "^4.0.26",
+    "@types/react-router-dom": "^4.2.7",
+    "@types/react-router-redux": "^5.0.15",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^4.3.1",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.9.1",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
