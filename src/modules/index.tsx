@@ -7,4 +7,4 @@ export type RootState = {
 
 export const rootReducer = combineReducers({
     router: routerReducer,
-});
+} as any);
