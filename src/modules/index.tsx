@@ -1,4 +1,4 @@
-import { routerReducer, RouterState } from 'react-router-redux';
+import { RouterState } from 'connected-react-router';
 import { combineReducers } from 'redux';
 
 export type RootState = {
@@ -6,5 +6,4 @@ export type RootState = {
 };
 
 export const rootReducer = combineReducers({
-    router: routerReducer,
 } as any);
