@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const history = require('connect-history-api-fallback');
+const convert = require('koa-connect');
 
 module.exports = {
     mode: 'development',
@@ -39,11 +41,11 @@ module.exports = {
         filename: 'static/js/bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
+    serve: {
+        content: path.resolve(__dirname, 'dist'),
         port: 3000,
-        historyApiFallback: {
-            index: '/',
+        add: (app, middleware, options) => {
+            app.use(convert(history({ index: '/' })));
         },
     },
     plugins: [
